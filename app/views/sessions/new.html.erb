@@ -11,17 +11,19 @@
 									</div>
 									<div class="panel-body">
 											<%= form_tag '/login' do %>
-										<div class="input-group input-group-lg">
-											<%= text_field_tag :email, "", placeholder: 'Email Address', class: 'form-control rounded-right' %>
-											<%= password_field_tag :password, "", placeholder: 'Password', class: 'form-control rounded-right' %>
-											<br>
+										<div class="input-group">
+										  <span class="input-group-addon" id="basic-addon1">@</span>
+											<%= text_field_tag :email, "", placeholder: 'Email Address', class: 'form-control' %>
+										</div>
+										<div class="input-group">
+											<span class="input-group-addon" id="basic-addon1">@</span>
+											<%= password_field_tag :password, "", placeholder: 'Password', class: 'form-control' %>
+										</div>
 											<%= submit_tag "Sign In", class: 'btn-u btn-u-blue btn-block rounded' %>
 										</div>
 											<% end %>
-											</form>
 									</div>
 									<div class="panel-footer">Panel footer</div>
 							</div>
 					</div>
 			</div>
-	</div>
