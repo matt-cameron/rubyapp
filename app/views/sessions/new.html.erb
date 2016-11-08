@@ -12,8 +12,8 @@
 									<div class="panel-body">
 											<%= form_tag '/login' do %>
 										<div class="input-group input-group-lg">
-											<span class="input-group-addon">E</span><%= text_field_tag :email, "", placeholder: 'Email Address', class: 'form-control rounded-right' %>
-											<span class="input-group-addon">P</span><%= password_field_tag :password, "", placeholder: 'Password', class: 'form-control rounded-right' %>
+											<%= text_field_tag :email, "", placeholder: 'Email Address', class: 'form-control rounded-right' %>
+											<%= password_field_tag :password, "", placeholder: 'Password', class: 'form-control rounded-right' %>
 											<br>
 											<%= submit_tag "Sign In", class: 'btn-u btn-u-blue btn-block rounded' %>
 										</div>
