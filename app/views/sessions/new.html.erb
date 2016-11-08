@@ -11,12 +11,13 @@
 									</div>
 									<div class="panel-body">
 										<form role="form">
+														<%= form_tag '/login' do %>
                             <fieldset>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
+                                    <%= text_field_tag :email, "", placeholder: 'Email Address', class: 'form-control' %>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                    <%= password_field_tag :password, "", placeholder: 'Password', class: 'form-control' %>
                                 </div>
                                 <div class="checkbox">
                                     <label>
@@ -24,8 +25,9 @@
                                     </label>
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
-                                <a href="index.html" class="btn btn-lg btn-success btn-block">Login</a>
+                                <%= submit_tag "Sign In", class: 'btn btn-lg btn-success btn-block' %>
                             </fieldset>
+														<% end %>
                         </form>
 
 										</div>
@@ -36,12 +38,3 @@
 			</div>
 
 <div class="panel-footer">Panel footer</div>
-	<%= form_tag '/login' do %>
-
-			<%= text_field_tag :email, "", placeholder: 'Email Address', class: 'form-control' %>
-
-			<%= password_field_tag :password, "", placeholder: 'Password', class: 'form-control' %>
-
-			<%= submit_tag "Sign In", class: 'btn btn-success' %>
-
-			<% end %>
