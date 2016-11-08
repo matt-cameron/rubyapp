@@ -4,20 +4,23 @@
 			<div class="row">
 					<div class="col-md-4 col-md-offset-4">
 							<div class="login-panel panel panel-default">
-									<div class="panel-heading .text-center">
+									<div class="panel-heading">
 											<%= image_tag("logo.png", size: "50%", alt: "DriveABLE") %>
 											<br>
 											<h3 class="panel-title">Please Sign In</h3>
 									</div>
 									<div class="panel-body">
 											<%= form_tag '/login' do %>
-											<%= text_field_tag :email, "", placeholder: 'Email Address', class: 'form-control rounded-right' %>
-											<%= password_field_tag :password, "", placeholder: 'Password', class: 'form-control rounded-right' %>
+										<div class="input-group input-group-lg">
+											<span class="input-group-addon">E</span><%= text_field_tag :email, "", placeholder: 'Email Address', class: 'form-control rounded-right' %>
+											<span class="input-group-addon">P</span><%= password_field_tag :password, "", placeholder: 'Password', class: 'form-control rounded-right' %>
 											<br>
 											<%= submit_tag "Sign In", class: 'btn-u btn-u-blue btn-block rounded' %>
+										</div>
 											<% end %>
 											</form>
 									</div>
+									<div class="panel-footer">Panel footer</div>
 							</div>
 					</div>
 			</div>
