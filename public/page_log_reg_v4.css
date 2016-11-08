@@ -13,12 +13,13 @@ body {
 .image-block {
 	padding: 70px 0;
 	overflow: hidden;
-	margin-bottom: -99999px;
+	/*margin-bottom: -99999px;
   padding-bottom: 99999px;
+	*/
 	/*background-image: url("x6YzbWWRq2sRhAacMjnl_Bangkok.jpg");
 	background-position: top;
-	background-color: rgb(99,190,106);
 	*/
+	background-color: rgb(99,190,106);
 }
 
 /* Form block */
