@@ -8,18 +8,18 @@
 
 			<div class="col-md-6 col-sm-6 form-block equal-height-column">
 				<a href="index.html">
-          <%= image_tag("logo1-blue.png") %>
+          <%= image_tag("logo.png") %>
 				</a>
 				<h2 class="margin-bottom-30">Login To Your Account</h2>
 				<%= form_tag '/login' do %>
 					<div class="login-block">
 						<div class="input-group margin-bottom-20">
-							<span class="input-group-addon rounded-left"><i class="icon-user color-blue"></i></span>
+							<span class="input-group-addon rounded-left"><i class="fa fa-user" aria-hidden="true"></i></span>
 							<%= text_field_tag :email, "Email", class: 'form-control rounded-right' %>
 						</div>
 
 						<div class="input-group margin-bottom-20">
-							<span class="input-group-addon rounded-left"><i class="icon-lock color-blue"></i></span>
+							<span class="input-group-addon rounded-left"><i class="fa fa-lock" aria-hidden="true"></i></span>
 							<%= password_field_tag :password, "Password", class: 'form-control rounded-right' %>
 						</div>
 
@@ -38,7 +38,7 @@
 	<!--=== Sticky Footer ===-->
 	<div class="container sticky-footer">
 		<p class="copyright-space">
-			2016 &copy; All Rights Reserved. DriveABLE
+			2016 &copy; All Rights Reserved.
 		</p>
 	</div>
 	<!--=== End Sticky Footer ===-->
