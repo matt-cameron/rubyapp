@@ -13,5 +13,6 @@
  *= require_self
  *= require sb-admin-2.css
  *= require bootstrap.css
+ *= require animate.css
  *= require font-awesome
  */
