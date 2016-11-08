@@ -12,11 +12,9 @@
 									<div class="panel-body">
 											<%= form_tag '/login' do %>
 										<div class="input-group">
-										  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
 											<%= text_field_tag :email, "", placeholder: 'Email Address', class: 'form-control' %>
 										</div>
 										<div class="input-group">
-											<span class="input-group-addon" id="basic-addon1"><i class="fa fa-key" aria-hidden="true"></i></span>
 											<%= password_field_tag :password, "", placeholder: 'Password', class: 'form-control' %>
 										</div>
 											<%= submit_tag "Sign In", class: 'btn btn-success' %>
