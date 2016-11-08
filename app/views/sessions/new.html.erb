@@ -10,18 +10,38 @@
 											<h3 class="panel-title">Please Sign In</h3>
 									</div>
 									<div class="panel-body">
-											<%= form_tag '/login' do %>
-										<div class="input-group">
-											<%= text_field_tag :email, "", placeholder: 'Email Address', class: 'form-control' %>
+										<form role="form">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="remember" type="checkbox" value="Remember Me">Remember Me
+                                    </label>
+                                </div>
+                                <!-- Change this to a button or input when using this as a form -->
+                                <a href="index.html" class="btn btn-lg btn-success btn-block">Login</a>
+                            </fieldset>
+                        </form>
+
 										</div>
-										<div class="input-group">
-											<%= password_field_tag :password, "", placeholder: 'Password', class: 'form-control' %>
-										</div>
-											<%= submit_tag "Sign In", class: 'btn btn-success' %>
-										</div>
-											<% end %>
-									<div class="panel-footer">Panel footer</div>
+
 									</div>
 							</div>
 					</div>
 			</div>
+
+<div class="panel-footer">Panel footer</div>
+	<%= form_tag '/login' do %>
+
+			<%= text_field_tag :email, "", placeholder: 'Email Address', class: 'form-control' %>
+
+			<%= password_field_tag :password, "", placeholder: 'Password', class: 'form-control' %>
+
+			<%= submit_tag "Sign In", class: 'btn btn-success' %>
+
+			<% end %>
