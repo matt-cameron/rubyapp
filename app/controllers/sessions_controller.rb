@@ -1,6 +1,7 @@
 # app/controllers/sessions_controller.rb
 
 class SessionsController < ApplicationController
+layout 'sessions'
 
   def new
   end
@@ -9,7 +10,7 @@ class SessionsController < ApplicationController
   user = User.find_by_email(params[:email])
     # If the user exists AND the password entered is correct.
     if user && user.authenticate(params[:password])
-      # Save the user id inside the browser cookie. This is how we keep the user 
+      # Save the user id inside the browser cookie. This is how we keep the user
       # logged in when they navigate around our website.
       session[:user_id] = user.id
       redirect_to '/'
