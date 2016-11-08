@@ -6,7 +6,7 @@
 
   Email: <%= text_field_tag :email, "", class: 'form-control rounded-right' %>
   Password: <%= password_field_tag :password, "", class: 'form-control rounded-right' %>
-  <%= submit_tag "Submit" %>
+  <%= submit_tag "Submit", class: 'btn-u btn-u-blue btn-block rounded' %>
 
 <% end %>
 
@@ -20,21 +20,21 @@
 					<img src="assets/img/themes/logo1-blue.png" alt="">
 				</a>
 				<h2 class="margin-bottom-30">Login To Your Account</h2>
-				<form action="/login">
+				<%= form_tag '/login' do %>
 					<div class="login-block">
 						<div class="input-group margin-bottom-20">
 							<span class="input-group-addon rounded-left"><i class="icon-user color-blue"></i></span>
-							<input type="text" class="form-control rounded-right" placeholder="Username">
+							<%= text_field_tag :email, "", class: 'form-control rounded-right' %>
 						</div>
 
 						<div class="input-group margin-bottom-20">
 							<span class="input-group-addon rounded-left"><i class="icon-lock color-blue"></i></span>
-							<input type="password" class="form-control rounded-right" placeholder="Password">
+							<%= password_field_tag :password, "", class: 'form-control rounded-right' %>
 						</div>
 
 						<div class="row margin-bottom-70">
 							<div class="col-md-12">
-								<button type="submit" class="btn-u btn-u-blue btn-block rounded">Sign In</button>
+								<%= submit_tag "Submit", class: 'btn-u btn-u-blue btn-block rounded' %>
 							</div>
 						</div>
 
