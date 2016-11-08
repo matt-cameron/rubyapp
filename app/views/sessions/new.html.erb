@@ -4,8 +4,8 @@
 
 <%= form_tag '/login' do %>
 
-  Email: <%= text_field_tag :email %>
-  Password: <%= password_field_tag :password %>
+  Email: <%= text_field_tag :email, "", class: 'form-control rounded-right' %>
+  Password: <%= password_field_tag :password, "", class: 'form-control rounded-right' %>
   <%= submit_tag "Submit" %>
 
 <% end %>
@@ -20,7 +20,7 @@
 					<img src="assets/img/themes/logo1-blue.png" alt="">
 				</a>
 				<h2 class="margin-bottom-30">Login To Your Account</h2>
-				<form action="#">
+				<form action="/login">
 					<div class="login-block">
 						<div class="input-group margin-bottom-20">
 							<span class="input-group-addon rounded-left"><i class="icon-user color-blue"></i></span>
@@ -30,20 +30,6 @@
 						<div class="input-group margin-bottom-20">
 							<span class="input-group-addon rounded-left"><i class="icon-lock color-blue"></i></span>
 							<input type="password" class="form-control rounded-right" placeholder="Password">
-						</div>
-
-						<div class="checkbox">
-							<ul class="list-inline">
-								<li>
-									<label>
-										<input type="checkbox"> Remember me
-									</label>
-								</li>
-
-								<li class="pull-right">
-									<a href="#">Forgot password?</a>
-								</li>
-							</ul>
 						</div>
 
 						<div class="row margin-bottom-70">
