@@ -6,8 +6,14 @@
 body {
   background-color: #f8f8f8;
 }
-body.login {
-    background: url(x6YzbWWRq2sRhAacMjnl_Bangkok.jpg) no-repeat center center fixed; 
+#login-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
 }
 #wrapper {
   width: 100%;
