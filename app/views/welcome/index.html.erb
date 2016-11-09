@@ -13,7 +13,7 @@
       <th>Instance ID</th>
       <th>Public DNS</th>
       <th>State</th>
-      <th>Tags</th>
+      <th>Internal IP</th>
       <th>VPC</th>
       <th>Actions</th>
     </tr>
@@ -22,7 +22,7 @@
       <td><%= ec2.id %></td>
       <td><%= ec2.public_dns_name %></td>
       <td><%= ec2.state.name %></td>
-      <td><%= ec2.tags %></td>
+      <td><%= ec2.private_ip_address %></td>
       <td><%= ec2.vpc.id %></td>
       <td><a href="/start/<%= ec2.id %>">Start</a> -- <a href="/stop/<%= ec2.id %>">Stop</a></td>
     </tr>
