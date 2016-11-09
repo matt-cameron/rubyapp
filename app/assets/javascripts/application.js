@@ -13,5 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require sb-admin-2.js
+//= require metisMenu.js
+//= require morris.js
+//= require raphael.js
 //= require bootstrap.js
 //= require jquery.backstretch.js
