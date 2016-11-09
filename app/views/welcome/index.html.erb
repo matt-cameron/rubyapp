@@ -6,7 +6,8 @@
 <% else %>
   <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
 <% end %>
-
+<br>
+<h3>Instances</h3>
 <table class="table table-hover">
   <tr>
       <th>Instance ID</th>
@@ -21,15 +22,3 @@
     </tr>
     <% end  %>
 </table>
-
-</table>
-<h3> Instances </h3>
-<ul>
-<% @ec2.instances.each do |ec2|  %>
-<p><%= ec2.id %>
-<%= ec2.state.name %>
--- <a href="/start/<%= ec2.id %>">Start</a> -- <a href="/stop/<%= ec2.id %>">Stop</a>
-</p>
-
-<% end  %>
-</ul>
