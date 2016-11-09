@@ -18,7 +18,7 @@
     <tr>
       <% @ec2.instances.each do |ec2|  %>
       <td><%= ec2.id %></td>
-      <td><%= ec2.dns-name %></td>
+      <td><%= ec2.public_dns_name %></td>
       <td><%= ec2.state.name %></td>
       <td><a href="/start/<%= ec2.id %>">Start</a> -- <a href="/stop/<%= ec2.id %>">Stop</a></td>
     </tr>

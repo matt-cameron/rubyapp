@@ -7,16 +7,16 @@ class WelcomeController < ApplicationController
   def index
    require 'aws-sdk-rails'
 
-   @ec2 = Aws::EC2::Resource.new(region: 'us-east-1')  
+   @ec2 = Aws::EC2::Resource.new(region: 'us-east-1')
   end
 
   def stop
    require 'aws-sdk-rails'
 
    ec2 = Aws::EC2::Resource.new(region: 'us-east-1')
-   target = params[:instance]      
+   target = params[:instance]
    i = ec2.instance(target)
-    
+
    if i.exists?
      case i.state.code
      when 80  # stopped
