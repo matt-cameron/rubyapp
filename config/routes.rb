@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get '/start/:instance' => 'welcome#start'
   get '/stop/:instance' => 'welcome#stop'
-
+  # instances
+  get '/instances' => 'instances#view'
   # session control
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
